@@ -101,7 +101,7 @@ define(['jquery', 'hammer', 'bootstrap', 'setup', 'resize-text', 'bar-chart', 'd
 				styled: true,
 				latitude: 35.4028856,
 				longitude: -80.8570815,
-				zoom: 9,
+				zoom: 8,
 				hue: primaryColor.toRgbaString(),
 				gamma: 1.75,
 				saturation: -80,
