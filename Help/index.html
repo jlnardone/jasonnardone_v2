@@ -1,0 +1,1850 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MongKok Manual</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimal-ui">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<div class="container">
+	<header class="row">
+		<nav id="main-nav" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">MongKok Manual</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">General <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#key-features">Key Features</a></li>
+								<li><a href="#getting-started">Getting Started</a></li>
+								<li class="divider"></li>
+								<li><a href="#installing-the-mongkok-theme">Installing the Mongkok Theme</a></li>
+								<li class="divider"></li>
+								<li><a href="#changing-the-color-scheme">Changing the Color Scheme</a></li>
+								<li><a href="#changing-the-typeface">Changing the Typeface</a></li>
+								<li><a href="#setting-up-the-mongkok-theme-through-index-less">Setting Up the MongKok theme through index.less</a></li>
+								<li class="divider"></li>
+								<li><a href="#changing-the-position-of-navigation-bar">Changing the Position of Navigation Bar</a></li>
+								<li><a href="#changing-the-off-canvas-navigation-animation">Changing the Off-canvas Navigation Animation</a></li>
+								<li><a href="#adding-contents-to-the-navigation-bar">Adding Contents to the Navigation Bar</a></li>
+								<li><a href="#setting-up-the-navigation-bar-through-index-js">Setting Up the Navigation Bar through index.js</a></li>
+								<li><a href="#setting-up-the-navigation-bar-through-index-less">Setting Up the Navigation Bar through index.less</a></li>
+								<li class="divider"></li>
+								<li><a href="#creating-a-new-section">Creating a New Section</a></li>
+								<li><a href="#removing-an-existing-section">Removing An Existing Section</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Welcome <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#adding-contents-to-the-welcome-section">Adding Contents to the Welcome Section</a></li>
+								<li><a href="#using-ticker">Using Ticker</a></li>
+								<li><a href="#changing-the-height-of-the-welcome-section">Changing the Height of the Welcome Section</a></li>
+								<li><a href="#fix-unfix-the-welcome-section">Fix / Unfix the Welcome Section</a></li>
+								<li><a href="#showing-hiding-box-shadow">Showing / Hiding Box Shadow</a></li>
+								<li><a href="#setting-up-the-welcome-section-through-index-less">Setting Up the Welcome Section through index.less</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">About & Resume <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#adding-contents-to-the-about-section">Adding Contents to the About Section</a></li>
+								<li class="divider"></li>
+								<li><a href="#adding-education-and-experience-to-the-resume-section">Adding Education and Experience to the Resume Section</a></li>
+								<li><a href="#adding-honors-and-rewards-to-the-resume-section">Adding Honors and Rewards to the Resume Section</a></li>
+								<li><a href="#adding-charts-to-the-resume-section">Adding Charts to the Resume Section</a></li>
+								<li><a href="#setting-up-charts-through-index-js">Setting Up Charts through index.js</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#the-folder-structure-of-portfolio">The Folder Structure of Portfolio</a></li>
+								<li><a href="#adding-a-portfolio-category">Adding a Portfolio Category</a></li>
+								<li><a href="#adding-items-to-a-portoflio-category">Adding Items to a Portoflio Category</a></li>
+								<li><a href="#adding-details-of-a-portfolio-item">Adding Details of a Portfolio Item</a></li>
+								<li><a href="#setting-up-the-portfolio-section-through-index-js">Setting Up the Portfolio Section through index.js</a></li>
+								<li><a href="#setting-up-the-portfolio-section-through-index-less">Setting Up the Portfolio Section through index.less</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Event, Books & Gallery <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#editing-the-event-section">Editing the Event Section</a></li>
+								<li class="divider"></li>
+								<li><a href="#adding-an-animated-book">Adding an Animated Book</a></li>
+								<li><a href="#changing-css3-transitions-of-animated-books">Changing CSS3 Transitions of Animated Books</a></li>
+								<li><a href="#setting-up-animated-books-through-index-js">Setting Up Animated Books through index.js</a></li>
+								<li><a href="#setting-up-animated-books-through-index-less">Setting Up Animated Books through index.less</a></li>
+								<li class="divider"></li>
+								<li><a href="#adding-items-to-the-gallery-section">Adding Items to the Gallery Section</a></li>
+								<li><a href="#setting-up-the-gallery-section-through-index-less">Setting Up the Gallery Section through index.less</a></li>
+								<li><a href="#setting-up-lightboxes-through-index-js">Setting Up Lightboxes through index.js</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Miscellaneous <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#setting-up-google-maps">Setting Up Google Maps</a></li>
+								<li><a href="#setting-up-the-contact-form">Setting Up the Contact Form</a></li>
+								<li><a href="#setting-up-the-footer">Setting Up the Footer</a></li>
+								<li><a href="#setting-up-the-footer-through-index-less">Setting Up the Footer through index.less</a></li>
+								<li><a href="#setting-up-google-analytics">Setting Up Google Analytics</a></li>
+								<li><a href="#disabling-momentum-scrolling">Disabling Momentum Scrolling</a></li>
+								<li class="divider"></li>
+								<li><a href="#search-engine-optimization-seo">Search Engine Optimization (SEO)</a></li>
+								<li><a href="#browser-compatibility">Browser Compatibility</a></li>
+								<li><a href="#theme-support">Theme Support</a></li>
+								<li><a href="#credits">Credits</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+	</header>
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1">
+			<div>
+				<h1>MongKok</h1>
+				<h2>A Modern Onepage Resume / Personal Template</h2>
+				<h3 id="key-features">Key Features</h3>
+
+				<p>MongKok is a modern onepage resume / personal web template built on Bootstrap 3 with lots of options for customization. The key features of this template include:</p>
+
+				<ul>
+					<li>Modern design</li>
+					<li>Responsive layouts</li>
+					<li>Flexible color scheme (single color / dual colors)</li>
+					<li>5 predefined color schemes</li>
+					<li>4 navigation bar positions (top, bottom, left, right)</li>
+					<li>6 CSS3 Off-canvas navigation animations (push, reveal, scale up, rotate in, rotate out, rotate & reveal)</li>
+					<li>Resume section with clean typography</li>
+					<li>4 types of charts (bar chart, pie chart, donut chart, progress chart) with on-scroll animations</li>
+					<li>AJAX portfolio section</li>
+					<li>3 types of predefined layouts plus the option to use your own layout for portfolio details</li>
+					<li>Image slider and YouTube / Vimeo videos can be used in portfolio details</li>
+					<li>Book section with CSS3 animated books</li>
+					<li>2 predefined 3D transitions for animated books plus 2D fallback</li>
+					<li>Gallery section with lightboxes for images, YouTube / Vimeo videos and webpages</li>
+					<li>Styled / original Google Maps</li>
+					<li>Working AJAX contact form</li>
+					<li>Lots of code snippets to help you create your own content</li>
+				</ul>
+			</div>
+
+			<div>
+				<h3 id="getting-started">Getting Started</h3>
+
+				<p>The Boostrap 3 CSS stylesheets used in this template are linked directly to CDNs (Content Delivery networks). Before editing the template, please make sure that you are connected to the Internet. Otherwise, the template will not be able to work properly.</p>
+				<p><strong>Since portfolio items and their details are loaded using AJAX, we recommend editing the MongKok template on a PC or Mac with <a href="http://www.wampserver.com/en/" target="_blank">WAMP</a> or <a href="https://www.mamp.info/en/" target="_blank">MAMP</a> installed. If you edit this template on a computer without a local web server, you may not be able to load the portfolio section properly until you upload the template to your web server.</strong></p>
+				<p>To test / use the ajax contact form in this template, you will need to make sure that your web server supports PHP and the PHP mail function.</p>
+			</div>
+
+			<div>
+				<h3 id="installing-the-mongkok-theme">Installing the MongKok Theme</h3>
+
+				<p>Once you download the theme package from themeforest.net and unzip it, you will find two folders named <strong>Help</strong> and <strong>HTML</strong>. The files you will need to edit and upload to your web server are those within the <strong>HTML</strong> folder. All the paths in this manual refer to files and folders within the <strong>HTML</strong> folder unless otherwise specified.</p>
+			</div>
+
+			<div>
+				<h3 id="changing-the-color-scheme">Changing the Color Scheme</h3>
+			
+				<p>A color scheme in the MongKok template consists of two colors: primary color and secondary color. To change the color scheme, open the LESS file <strong>css/index.less</strong> and locate the variables <strong>@primaryColor</strong> and <strong>@secondaryColor</strong>. After changing their values, save the LESS file and then compile it using <a href="http://winless.org/" target="_blank">WinLess</a> on Windows or <a href="http://crunchapp.net/">Crunch!</a> on Mac to generate a new version of “index.css” so that your changes can take effect.</p>
+
+				<p>You can also use a single color instead of dual colors in the color scheme. Simply make the value of the variable <strong>@secondaryColor</strong> equal to the value of the variable <strong>@primaryColor</strong>. You will then have a monotone version of the template.</p>
+
+				<p>The MongKok template also comes with 5 predefined color schemes. You can choose a scheme you like in <strong>css/index.less</strong> by commenting out the other 4 schemes.</p>
+			</div>
+
+			<div>
+				<h3 id="changing-the-typeface">Changing the Typeface</h3>
+
+				<p>4 different fonts are used in the body text, the title text, the signatures and the blockquotes of the MongKok template. To change the typeface, open <strong>index.html</strong> and locate the following lines in the <strong>head</strong> tag. </p>
+				<pre>&lt;link href='http://fonts.googleapis.com/css?family=PT+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'&gt;
+&lt;link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'&gt;
+&lt;link href='http://fonts.googleapis.com/css?family=Satisfy:400' rel='stylesheet' type='text/css'&gt;</pre>
+
+				<p>Chooose the web fonts you want to use from <a href="http://www.google.com/fonts/" target="_blank">Google Fonts</a>. Then copy the HTML code of the <strong>link</strong> tags for your web fonts and replace the original <strong>link</strong> tags shown above in <strong>index.html</strong>. Then save your changes.</p>
+
+				<p>Next, open <strong>css/index.less</strong> and locate the following block.</p>
+				<pre>@bodyTextFont: "PT Sans", Sans-Serif;
+@titleTextFont: "Roboto Condensed", Sans-Serif;
+@signatureFont: "Satisfy", Sans-Serif;
+@blockquoteFont: "Georgia", "Times New Roman", Serif;</pre>
+				<p>Specify which font of new web fonts you would like to use in the body text, the title text, the signatures and the blockquotes by updating the font names in the block shown above. Finally, save the file and then compile it using <a href="http://winless.org/" target="_blank">WinLess</a> on Windows or <a href="http://crunchapp.net/">Crunch!</a> on Mac to generate a new version of “index.css” so that your changes can take effect.</p>
+			</div>
+
+			<div>
+				<h3 id="setting-up-the-mongkok-theme-through-index-less">Setting Up the MongKok theme through index.less</h3>
+
+				<p>There are many variables in <strong>css/index.less</strong> whose values you can change to customize the MongKok theme. Please use the table below for your reference.</p>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th style="width: 20%">Property</th>
+							<th style="width: 40%">Functionality</th>
+							<th style="width: 20%">Default Value</th>
+							<th style="width: 20%">Remarks</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>@bgColor</td>
+							<td>The background color of this theme</td>
+							<td>#ffff</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@bodyTextColor</td>
+							<td>The color of body text in this theme</td>
+							<td>#666</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@bodyTextFontWeight</td>
+							<td>The font weight of body text in this theme</td>
+							<td>400</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@bodyFontSize</td>
+							<td>The font size of body text in this theme</td>
+							<td>14.5px</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@bodyLineHeight</td>
+							<td>The line height of body text in this theme</td>
+							<td>22px
+							<td></td>
+						</tr>
+						<tr>
+							<td>@titleTextColor</td>
+							<td>The color of title text in this theme</td>
+							<td>#000</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@titleTextFontWeight</td>
+							<td>The font weight of title text in this theme</td>
+							<td>700</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@primaryColor</td>
+							<td>The primary color of this theme</td>
+							<td>(The primary color of one of the predefined color schemes)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@darkPrimaryColor</td>
+							<td>The dark version of the primary color</td>
+							<td>mix(@primaryColor, black, 50%)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@lightPrimaryColor</td>
+							<td>The light version of the primary color</td>
+							<td>mix(@primaryColor, white, 15%)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@secondaryColor</td>
+							<td>The secondary color of this theme</td>
+							<td>(The secondary color of one of the predefined color schemes)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@linkColor</td>
+							<td>The color of links in this theme</td>
+							<td>@primaryColor</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@linkHoverColor</td>
+							<td>The color of hovered links in this theme</td>
+							<td>@secondaryColor</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@bodyTextFont</td>
+							<td>The typeface of the body text</td>
+							<td>"PT Sans", Sans-Serif</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@titleTextFont</td>
+							<td>The typeface of the title text</td>
+							<td>"Roboto Condensed", Sans-Serif</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@signatureFont</td>
+							<td>The typeface of signatures</td>
+							<td>"Satisfy", Sans-Serif</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@blockquoteFont</td>
+							<td>The typeface of blockquotes</td>
+							<td>"Georgia", "Times New Roman", Serif</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@transitionDuration</td>
+							<td>The duration of CSS transitions in this theme</td>
+							<td>0.5s</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@preloaderBgColor</td>
+							<td>The background color of preloader</td>
+							<td>#222</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@preloaderIcon</td>
+							<td>The URL for the preloader icon</td>
+							<td>url('../images/preloader.gif')</td>
+							<td>Format: <strong>url('http://example.com/example.gif')</strong></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<p>If you cannot find the details of a variable in the above table, please refer to the contents related to their own sections in this manual.</p>
+			</div>
+
+			<div>
+				<h3 id="changing-the-position-of-navigation-bar">Changing the Position of Navigation Bar</h3>
+
+				<p>There are 4 navigation bar positions available in the MongKok template. You can place the navigation bar at the top, bottom, left or right of the browser viewport.</p>
+				<p>To change the position of the navigation bar, open <strong>js/index.js</strong> and change the value of the property <strong>navPosition</strong> in the variable <strong>navSettings</strong> to <strong>top</strong>, <strong>bottom</strong>, <strong>left</strong> or <strong>right</strong> according to your preference and then save the changes you have made.</p>
+			</div>
+
+			<div>
+				<h3 id="changing-the-off-canvas-navigation-animation">Changing the Off-canvas Navigation Animation</h3>
+
+				<p>There are 6 off-canvas navigation animations available in the MongKok template. Most of the time, the navigation bar is hidden from the browser viewport, and it will move into the viewport once you click the navigation bar toggle. The 6 animations available are push, reveal, scale up, rotate in, rotate out and rotate & reveal.</p>
+				<p>To change the navigation animation, open <strong>js/index.js</strong> and change the value of the property <strong>offCanvasAnimation</strong> in the variable <strong>navSettings</strong> to <strong>push</strong>, <strong>reveal</strong>, <strong>scale-up</strong>, <strong>rotate-in</strong>, <strong>rotate-out</strong> or <strong>rotate-reveal</strong> according to your preference and then save the changes you have made.</p>
+			</div>
+
+			<div>
+				<h3 id="adding-contents-to-the-navigation-bar">Adding Contents to the Navigation Bar</h3>
+
+				<p>You can add your name, menu items, social links and other information to the navigation bar. To do so, locate the <strong>nav</strong> tag in <strong>index.html</strong>. You can then add your name to the <strong>div</strong> tag with the class <strong>before-menu</strong>, and your social links to the <strong>div</strong> tag with the class <strong>after-menu</strong>.</p>
+				<p>If the navigation bar is at the top / bottom of the browser viewport, the contents within the <strong>div</strong> tags with the class <strong>before-menu</strong> or <strong>after-menu</strong> will be hidden. These contents will only be visible when the navigation bar is at the left / right of the browser viewport.</p>
+				<p>The menu items are defined within the <strong>ul</strong> tag with the classes <strong>menu</strong> and <strong>nav</strong>. Each item is defined in the following format.</p>
+				<pre>&lt;li&gt;&lt;a href="#<span class="important">[Section ID]</span>"&gt;&lt;i class="fa <span class="important">[FontAwesome icon class]</span>"&gt;&lt;/i&gt;&lt;span&gt;<span class="important">[Section name]</span>&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</pre>
+				<p>If you want your menu item to link to an external resource, you can define it like this.</p>
+				<pre>&lt;li&gt;&lt;a target="_blank" href="http://www.example.com"&gt;&lt;i class="fa <span class="important">[FontAwesome icon class]</span>"&gt;&lt;/i&gt;&lt;span&gt;<span class="important">[Name of the external resource]</span>&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</pre>
+			</div>
+
+			<div>
+				<h3 id="setting-up-the-navigation-bar-through-index-js">Setting Up the Navigation Bar through index.js</h3>
+
+				<p>You can set up the navigation bar by adding property-value pairs in the following format to the <strong>navSettings</strong> variable in <strong>js/index.js</strong>.</p>
+				<pre><span class="important">[Property]</span>: <span class="important">[Value]</span>,</pre>
+				<p>Below is a list of properties that you can use to customize the navigation bar.</p>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th style="width: 20%">Property</th>
+							<th style="width: 40%">Functionality</th>
+							<th style="width: 20%">Default Value</th>
+							<th style="width: 20%">Remarks</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>navPosition</td>
+							<td>The position of the navigation bar</td>
+							<td>'top'</td>
+							<td>Valid values are 'top', 'bottom', 'left' or 'right'.</td>
+						</tr>
+						<tr>
+							<td>offCanvasAnimation</td>
+							<td>The CSS3 animation for off-canvas navigation</td>
+							<td>'rotate-reveal'</td>
+							<td>Valid values are 'push', 'reveal', 'scale-up', 'rotate-in', 'rotate-out' and 'rotate-reveal'.</td>
+						</tr>
+						<tr>
+							<td>offCanvasAnimationPerspective</td>
+							<td>The CSS perspective for the animation of off-canvas navigation</td>
+							<td>'400px'</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>offCanvasAnimationScaleUpInitScale</td>
+							<td>The initial scale for the scale up animation for off-canvas navigation</td>
+							<td>0.85</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>offCanvasAnimationRotateRevealAngle</td>
+							<td>The rotating angle of the canvas in degree for the rotate &amp; reveal animation of off-canvas navigation</td>
+							<td>3</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>offCanvasAnimationRotateRevealAngle</td>
+							<td>The duration of the fallback animation of off-canvas navigation in milliseconds</td>
+							<td>500</td>
+							<td>When CSS3 transitions are not available, the fallback animation will be used.</td>
+						</tr>
+						<tr>
+							<td>verticalNavWidth</td>
+							<td>The width of the navigation bar when it is placed on the left / right of the browser viewport</td>
+							<td>'220px'</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>verticalNavShowIcons</td>
+							<td>Specifies whether to show icons in the menu items of the navigation bar when it is placed on the left / right of the browser viewport</td>
+							<td>true</td>
+							<td>Valid values are <strong>true</strong> / <strong>false</strong>.</td>
+						</tr>
+						<tr>
+							<td>navScrollingAnimationDuration</td>
+							<td>The duration of the scrolling animation after an menu item is clicked in milliseconds</td>
+							<td>300</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div>
+				<h3 id="setting-up-the-navigation-bar-through-index-less">Setting Up the Navigation Bar through index.less</h3>
+
+				<p>There are also a number of variables in <strong>css/index.less</strong> whose values you can change to modify the appearance of the navigation bar. Please see the table below for your reference.</p>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th style="width: 20%">Property</th>
+							<th style="width: 40%">Functionality</th>
+							<th style="width: 20%">Default Value</th>
+							<th style="width: 20%">Remarks</th>
+						</tr>
+					</thead>
+					<tbody>
+						
+						<tr>
+							<td>@navBgColor</td>
+							<td>The background color of the navigation bar</td>
+							<td>#333</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@navTextColor</td>
+							<td>The text color of the navigation bar</td>
+							<td>rgba(255,255,255,1)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@navLinkColor</td>
+							<td>The color of links in the navigation bar</td>
+							<td>rgba(255,255,255,.2)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@navLinkHoverColor</td>
+							<td>The color of hovered links in the navigation bar</td>
+							<td>rgba(255,255,255,1)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@navToggleBgColor</td>
+							<td>The background color of the toggle of the navigation bar</td>
+							<td>3</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@navToggleLinkColor</td>
+							<td>The color of links in the toggle of the navigation bar</td>
+							<td>#fff</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@navToggleLinkHoverColor</td>
+							<td>The color of hovered links in the toggle of the navigation bar</td>
+							<td>#fff</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@navToggleBgHoverColor</td>
+							<td>The background color of the hovered toggle of the navigation bar</td>
+							<td>@darkPrimaryColor</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@navToggleWidth</td>
+							<td>The width of the toggle of the navigation bar</td>
+							<td>40px</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@navToggleHeight</td>
+							<td>The height of the toggle of the navigation bar</td>
+							<td>40px</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@horizontalNavToggleVerticalOffset</td>
+							<td>The vertical distance between the toggle and the navigation bar when the navigation bar is placed at the top / bottom of the browser viewport</td>
+							<td>50px</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@horizontalNavToggleHorizontalOffset</td>
+							<td>The horizontal distance between the toggle and the left / right border of the browser viewport when the navigation bar is placed at the top / bottom of the browser viewport</td>
+							<td>5%</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@verticalNavToggleVerticalOffset</td>
+							<td>The vertical distance between the toggle and the top / bottom border of the browser viewport when the navigation bar is placed at the left / right of the browser viewport</td>
+							<td>40px</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@verticalNavToggleHorizontalOffset</td>
+							<td>The horizontal distance between the toggle and the navigation bar when the navigation bar is placed at the left / right of the browser viewport</td>
+							<td>5%</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@navToggleBorderRadius</td>
+							<td>The border radius of the toggle of the navigation bar</td>
+							<td>0</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div>
+				<h3 id="creating-a-new-section">Creating a New Section</h3>
+
+				<p>Each section in the MongKok template is defined in the following format.</p>
+				<pre>&lt;section id=&quot;<span class="important">[Section ID]</span>&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+	&lt;div class=&quot;row&quot;&gt;
+	  &lt;div class=&quot;col-sm-10 col-sm-offset-1&quot;&gt;
+		&lt;h2 class=&quot;h2-style&quot;&gt;<span class="important">[Section Title]</span>&lt;/h2&gt;
+		&lt;div class=&quot;row&quot;&gt;
+		  <span class="important">[Section Content]</span>
+		&lt;/div&gt;
+	  &lt;/div&gt;
+	&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</pre>
+				<p>Please follow the above format when creating your own section. Also, a code snippets page is included the theme package to help you create your own contents in a more convenient way. It contains a lot of useful HTML codes.</p>
+				<p>After creating a new section, please remember to add this section to the menu in the navigation bar. For the format of an menu item, please refer to the section <a href="#adding-contents-to-the-navigation-bar"><strong>Adding Contents to the Navigation Bar</strong></a>.</p>
+			</div>
+
+			<div>
+				<h3 id="removing-an-existing-section">Removing An Existing Section</h3>
+
+				<p>To remove an existing section, simply remove its related <strong>section</strong> tag and the HTML code inside it. After that, please remove its related menu item from the navigation bar.</p>
+			</div>
+
+			<div>
+				<h3 id="adding-contents-to-the-welcome-section">Adding Contents to the Welcome Section</h3>
+
+				<p>The welcome section is the first section of this template. This section is designed to display your basic information such as your name and your contact methods in a way that grabs attentions. It is defined in the following format.</p>
+				<pre>&lt;section id=&quot;welcome&quot;&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-sm-10 col-sm-offset-1 vertically-centered-container&quot;&gt;
+        &lt;div class=&quot;vertically-centered&quot;&gt;
+          &lt;p class=&quot;before-name title-font uppercase letter-spacing&quot;&gt;<span class="important">[Any text before name]</span>&lt;/p&gt;
+          &lt;h1 class=&quot;name&quot;&gt;&lt;span class=&quot;span-text&quot;&gt;<span class="important">[Your name]</span>&lt;/span&gt;&lt;/h1&gt;
+          &lt;p class=&quot;after-name&quot;&gt;&lt;span class=&quot;span-text title-font&quot;&gt;<span class="important">[Any text after name]</span>&lt;/span&gt;&lt;/p&gt;
+          &lt;div class=&quot;row info&quot;&gt;
+            &lt;div class=&quot;col-md-4&quot;&gt;&lt;p&gt;&lt;i class=&quot;fa fa-mobile-phone fa-lg&quot;&gt;&lt;/i&gt;<span class="important">[Telephone]</span>&lt;/p&gt;&lt;/div&gt;
+            &lt;div class=&quot;col-md-4&quot;&gt;&lt;p&gt;&lt;i class=&quot;fa fa-envelope-o&quot;&gt;&lt;/i&gt;&lt;a href=&quot;#&quot;&gt;<span class="important">[Email]</span>&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+            &lt;div class=&quot;col-md-4&quot;&gt;&lt;p&gt;&lt;i class=&quot;fa fa-laptop&quot;&gt;&lt;/i&gt;&lt;a href=&quot;#&quot;&gt;<span class="important">[Website]</span>&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</pre>
+				<p>There are basically 4 subsections in the welcome section: <strong>the before-name subsection</strong>, <strong>the name subsection</strong>, <strong>the after-name subsection</strong> and <strong>the info subsection</strong>. Any text that you want to appear before your name can be placed in the before-name subsection. Your name can be placed in the name subsection, and any text that you want to appear after your name, such as your position, can be placed in the after-name subsection. Your contact info, such as your telephone, email and website can be placed in the info subsection.</p>
+				<p>The class <strong>span-text</strong> is to make the text span the whole width of its container. The class <strong>title-font</strong> is to indicate the use of the font for the title text instead of the body text. The other classes used in the code above should be quite self-explanatory. For more about the use of the typography classes, please refer to the code snippets page that comes with the theme package.</p>
+			</div>
+
+			<div>
+				<h3 id="using-ticker">Using Ticker</h3>
+
+				<p>In the name subsection, besides using static text as in the example above, you can also use the following code to create a ticker.</p>
+				<pre>&lt;div class=&quot;ticker&quot;&gt;
+  &lt;h1 class=&quot;name&quot;&gt;&lt;span class=&quot;span-text&quot;&gt;I'm Creative&lt;/span&gt;&lt;/h1&gt;
+  &lt;h1 class=&quot;name&quot;&gt;&lt;span class=&quot;span-text&quot;&gt;I'm Talented&lt;/span&gt;&lt;/h1&gt;
+  &lt;h1 class=&quot;name&quot;&gt;&lt;span class=&quot;span-text&quot;&gt;I'm John Doe&lt;/span&gt;&lt;/h1&gt;
+&lt;/div&gt;</pre>
+			</div>
+
+			<div>
+				<h3 id="changing-the-height-of-the-welcome-section">Changing the Height of the Welcome Section</h3>
+
+				<p>To change the height of the welcome section, open <strong>css/index.less</strong> and locate the variable <strong>@welcomeSectionHeight</strong>. Then change its value to the height you want to use.</p>
+				<p>The unit of the height value can be <strong>px</strong> or <strong>%</strong>. Some typical height values are 100%, 80% and 500px.</p>
+			</div>
+
+			<div>
+				<h3 id="fix-unfix-the-welcome-section">Fix / Unfix the Welcome Section</h3>
+
+				<p>You can fix / unfix the welcome section in the MongKok template. If the welcome section is fixed, it will stay at the same position when you scroll the webpage.</p>
+				<p>Open <strong>js/index.js</strong> and locate the variable <strong>welcomeSettings</strong>. Change the value of the property <strong>fixFirstSection</strong> to <strong>true</strong> / <strong>false</strong> to fix / unfix the welcome section.</p>
+			</div>
+
+			<div>
+				<h3 id="showing-hiding-box-shadow">Showing / Hiding Box Shadow</h3>
+
+				<p>To show / hide the box shadow at the bottom of the welcome section, open <strong>css/index.less</strong> and locate the variable <strong>boxShadowAfterWelcome</strong>. Use any value of the CSS property <strong>box-shadow</strong> such as <strong>0 0 15px 0 rgba(0,0,0,.5);</strong> or <strong>none;</strong> as the value of the variable. Please refer to <a href="http://www.w3schools.com/cssref/css3_pr_box-shadow.asp" target="_blank">this webpage</a> for details of the box-shadow property.</p>
+			</div>
+
+			<div>
+				<h3 id="setting-up-the-welcome-section-through-index-less">Setting Up the Welcome Section through index.less</h3>
+
+				<p>There are a number of variables in <strong>css/index.less</strong> whose values you can change to modify the appearance of the welcome section. Please see the table below for your reference.</p>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th style="width: 20%">Property</th>
+							<th style="width: 40%">Functionality</th>
+							<th style="width: 20%">Default Value</th>
+							<th style="width: 20%">Remarks</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>@welcomeBgColor</td>
+							<td>The fallback background color of the welcome section</td>
+							<td>@primaryColor</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@welcomeUseBgImg</td>
+							<td>Specifies whether to use background image in the welcome section</td>
+							<td>false</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@welcomeBgImg</td>
+							<td>Specifies the URL of the background image in the welcome section</td>
+							<td>url('http://placehold.it/1200x800')</td>
+							<td>Effective only when <strong>@welcomeUseBgImg</strong> is true. Format: <strong>url('http://www.example.com/example.jpg')</strong></td>
+						</tr>
+						<tr>
+							<td>@welcomeSectionHeight</td>
+							<td>The height of the welcome section</td>
+							<td>80%</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@welcomeContentMaxWidth</td>
+							<td>The maximum width of the content of the welcome section</td>
+							<td>none</td>
+							<td>This variable is used to impose a maximum width to the content of the welcome section so that text with the class <strong>span-text</strong> will not appear too large. Recommended values are <strong>750px</strong> or <strong>none</strong>.</td>
+						</tr>
+						<tr>
+							<td>@welcomePaddingTop</td>
+							<td>The top padding of the welcome section</td>
+							<td>0</td>
+							<td>You can use this variable to fine-tune the vertical location the content of the welcome section.</td>
+						</tr>
+						<tr>
+							<td>@welcomeBeforeNameColor</td>
+							<td>The color of the text in the before-name subsection of the welcome section</td>
+							<td>#fff</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@welcomeNameColor</td>
+							<td>The color of the text in the name subsection of the welcome section</td>
+							<td>#fff</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@welcomeAfterNameColor</td>
+							<td>The color of the text in the after-name subsection of the welcome section</td>
+							<td>mix(@welcomeBgColor, black, 55%)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@welcomeLinkColor</td>
+							<td>The color of links in the welcome section</td>
+							<td>mix(@welcomeBgColor, black, 55%)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@welcomeLinkHoverColor</td>
+							<td>The color of hovered links in the welcome section</td>
+							<td>darken(@welcomeLinkColor, 15%)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@boxShadowAfterWelcome</td>
+							<td>The box shadow at the bottom of the welcome section</td>
+							<td>0 0 15px 0 rgba(0,0,0,.5)</td>
+							<td>Please refer to <a href="#showing-hiding-box-shadow">Showing / Hiding Box Shadow</a> for details</td>
+					</tbody>
+				</table>
+			</div>
+
+			<div>
+				<h3 id="adding-contents-to-the-about-section">Adding Contents to the About Section</h3>
+
+				<p>The about section lets you add your profile picture and some descriptions about yourself.</p>
+				<p>For the profile picture, you can use the class <strong>img-rounded</strong>, <strong>img-circle</strong>, <strong>img-thumbnail</strong> to give it rounded corners, a circular shape or the bootstrap thumbnail style.</p>
+				<p>In <strong>css/index.less</strong>, you will also be able to find a variable <strong>@profilePicMaxWidth</strong>. This variable is to impose the maximum width for the profile picture, so that it will not appear too large on mobile devices. The default value of <strong>@profilePicMaxWidth</strong> is <strong>300px</strong>.</p>
+				<p>For the descriptions, you can use drop caps, bold text, links and other typographic styles. The HTML code snippets for these styles can be found in the code snippets page included in the theme package.</p>
+			</div>
+
+			<div>
+				<h3 id="adding-education-and-experience-to-the-resume-section">Adding Education and Experience to the Resume Section</h3>
+
+				<p>Education and experience in the resume section are actually two item lists, and they are defined in the following format.</p>
+				<pre>&lt;h3 class=&quot;h3-style&quot;&gt;Education&lt;/h3&gt;
+&lt;ul class=&quot;item-list&quot;&gt;
+  &lt;li&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-sm-4&quot;&gt;
+        &lt;p class=&quot;title-style sm-text-center&quot;&gt;<span class="important">[University name]</span>&lt;/p&gt;
+        &lt;p class=&quot;tag sm-text-center&quot;&gt;<span class="important">[Period]</span>&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-sm-8&quot;&gt;
+        &lt;p class=&quot;title-style&quot;&gt;<span class="important">[Degree earned]</span>&lt;/p&gt;
+        &lt;p&gt;<span class="important">[Additional info]</span>&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 class=&quot;h3-style&quot;&gt;Experience&lt;/h3&gt;
+&lt;ul class=&quot;item-list&quot;&gt;
+  &lt;li&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-sm-4&quot;&gt;
+        &lt;p class=&quot;title-style sm-text-center&quot;&gt;<span class="important">[Company name]</span>&lt;/p&gt;
+        &lt;p class=&quot;tag sm-text-center&quot;&gt;<span class="important">[Period]</span>&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-sm-8&quot;&gt;
+        &lt;p class=&quot;title-style&quot;&gt;<span class="important">[Position]</span>&lt;/p&gt;
+        &lt;p&gt;<span class="important">[Job description]</span>&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</pre>
+				Please follow the above format to add your education and experience.
+			</div>
+
+			<div>
+				<h3 id="adding-honors-and-rewards-to-the-resume-section">Adding Honors and Rewards to the Resume Section</h3>
+
+				<p>Honors and rewards in the resume section is acutally an item lists, and it is defined in the following format.</p>
+				<pre>&lt;h3 class=&quot;h3-style&quot;&gt;Honors and Awards&lt;/h3&gt;
+&lt;ul class=&quot;item-list list-half-margin-bottom&quot;&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;span class=&quot;title-style&quot;&gt;<span class="important">[Honor / Award name]</span>&lt;/span&gt;
+      &lt;br&gt;<span class="important">[Additional info]</span>&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</pre>
+				Please follow the above format to add your honors and rewards.
+			</div>
+
+			<div>
+				<h3 id="adding-charts-to-the-resume-section">Adding Charts to the Resume Section</h3>
+
+				<p>There are 4 types of charts available in the MongKok template: <strong>bar charts</strong>, <strong>donut charts</strong>, <strong>pie charts</strong> (a special case of donut charts), and <strong>the progress charts</strong>.</p>
+				<h4>Bar Charts</h4>
+				<p>Bar charts are defined in the following format.</p>
+				<pre>&lt;dl id=&quot;<span class="important">[Chart ID]</span>&quot; class=&quot;chart bar-chart&quot; data-label-font-color=&quot;<span class="important">[Chart label color]</span>&quot;&gt;
+  &lt;dt data-color=&quot;<span class="important">[Background color of bar for this item]</span>&quot;&gt;<span class="important">[Label of this item]</span>&lt;/dt&gt;
+  &lt;dd&gt;<span class="important">[Value between 0 and 100]</span>&lt;/dd&gt;
+  ...
+&lt;/dl&gt;</pre>
+				<h4>Donut Charts</h4>
+				<p>Donut charts are defined in the following format.</p>
+				<pre>&lt;dl id=&quot;<span class="important">[Chart ID]</span>&quot; class=&quot;chart donut-chart&quot; data-arc-inner-radius-percent=&quot;<span class="important">[Inner radius in percentage]</span>&quot; data-arc-outer-radius-percent=&quot;<span class="important">[Outer radius in percentage]</span>&quot; data-show-percentage=&quot;<span class="important">[true / false]</span>&quot;&gt;
+  &lt;dt data-color=&quot;<span class="important">[Color of fill for this item]</span>&quot;&gt;[<span class="important">Label of this item]</span>&lt;/dt&gt;
+  &lt;dd&gt;<span class="important">[Value between 0 and 100]</span>&lt;/dd&gt;
+  ...
+&lt;/dl&gt;</pre>
+				<h4>Pie Charts</h4>
+				<p>Pie charts are defined in the following format. Note that pie charts are a special case of donut charts.</p>
+				<pre>&lt;dl id=&quot;<span class="important">[Chart ID]</span>&quot; class=&quot;chart donut-chart&quot; data-show-percentage=&quot;<span class="important">[true / false]</span>&quot;&gt;
+  &lt;dt data-color=&quot;<span class="important">[Color of fill for this item]</span>&quot;&gt;<span class="important">[Label of this item]</span>&lt;/dt&gt;
+  &lt;dd&gt;<span class="important">[Value between 0 and 100]</span>&lt;/dd&gt;
+  ...
+&lt;/dl&gt;</pre>
+				<h4>Progress Charts</h4>
+				<p>Progress charts are defined in the following format.</p>
+				<pre>&lt;dl id=&quot;<span class="important">[Chart ID]</span>&quot; class=&quot;chart progress-chart&quot; data-symbol-font-awesome-class=&quot;<span class="important">[FontAwesome icon class for progress symbol]</span>&quot;&gt;
+  &lt;dt data-color=&quot;<span class="important">[Color of fill for this item]</span>&quot;&gt;<span class="important">[Label of this item]</span>&lt;/dt&gt;
+  &lt;dd&gt;<span class="important">[Value between 0 and 100]</span>&lt;/dd&gt;
+  ...
+&lt;/dl&gt;</pre>
+				<p class="important">Note that <strong>Chart ID</strong> is required for every chart in the MongKok template. If a chart does not have an ID, it will not work properly.</p>
+				<h4>Sample Charts</h4>
+				<p>Examples of charts are also available in the code snippets page that comes with the theme package.</p>
+			</div>
+
+			<div>
+				<h3 id="setting-up-charts-through-index-js">Setting Up Charts through index.js</h3>
+
+				<p>You can set up charts by adding property-value pairs in the following format to the <strong>barChartSettings</strong> variable, the <strong>donutChartSettings</strong> variable and the <strong>progressChartSettings</strong> variable in <strong>js/index.js</strong>.</p>
+				<pre><span class="important">[Property]</span>: <span class="important">[Value]</span>,</pre>
+
+				<h4>Bar Charts</h4>
+				<p>Below is a list of properties that you can add to the <strong>barChartSettings</strong> variable to customize bar charts.</p>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th style="width: 20%">Property</th>
+							<th style="width: 40%">Functionality</th>
+							<th style="width: 20%">Default Value</th>
+							<th style="width: 20%">Remarks</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>paddingLeft</td>
+							<td>The left padding of bar charts</td>
+							<td>0</td>
+							<td>Unit: pixels</td>
+						</tr>
+						<tr>
+							<td>paddingRight</td>
+							<td>The right padding of bar charts</td>
+							<td>0</td>
+							<td>Unit: pixels</td>
+						</tr>
+						<tr>
+							<td>barHeight</td>
+							<td>The height of bars in bar charts</td>
+							<td>26</td>
+							<td>Unit: pixels</td>
+						</tr>
+						<tr>
+							<td>labelFontSize</td>
+							<td>The font size of labels in bar charts</td>
+							<td>12</td>
+							<td>Unit: pixels</td>
+						</tr>
+						<tr>
+							<td>labelFontWeight</td>
+							<td>The font weight of labels in bar charts</td>
+							<td>400</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>labelFontColor</td>
+							<td>The font color of labels in bar charts</td>
+							<td>'#666666'</td>
+							<td>The value of this property can be overridden by the <strong>data-label-font-color</strong> attribute specified in the definition of a bar chart.</td>
+						</tr>
+						<tr>
+							<td>labelHeight</td>
+							<td>The height of labels in bar charts</td>
+							<td>12</td>
+							<td>Unit: pixels</td>
+						</tr>
+						<tr>
+							<td>labelPaddingLeft</td>
+							<td>The left padding of labels in bar charts</td>
+							<td>10</td>
+							<td>Unit: pixels</td>
+						</tr>
+						<tr>
+							<td>labelPaddingRight</td>
+							<td>The right padding of labels in bar charts</td>
+							<td>10</td>
+							<td>Unit: pixels</td>
+						</tr>
+						<tr>
+							<td>barVerticalSpacing</td>
+							<td>The vertical spacing between bars</td>
+							<td>3</td>
+							<td>Unit: pixels</td>
+						</tr>
+						<tr>
+							<td>barStrokeWidth</td>
+							<td>The stroke width of bars in bar charts</td>
+							<td>0</td>
+							<td>Unit: pixels</td>
+						</tr>
+						<tr>
+							<td>barStrokeColor</td>
+							<td>The stroke color of bars in bar charts</td>
+							<td>'#ffffff'</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>defaultBarFillColor</td>
+							<td>The default fill of bars in bar charts</td>
+							<td>'#ffe0ba'</td>
+							<td>The value of this property can be overridden by the <strong>data-color</strong> attribute specified in the definition of each item of a bar chart.</td>
+						</tr>
+						<tr>
+							<td>initialPercent</td>
+							<td>The initial percentage of a bar when the bar charts animation begins</td>
+							<td>0</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>animationDuration</td>
+							<td>The duration of the bar charts animation in milliseconds</td>
+							<td>1200</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>onScrollAnimation</td>
+							<td>Specifies whether or not to enable on-scroll animations for bar charts</td>
+							<td>true</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h4>Donut / Pie Charts</h4>
+				<p>Below is a list of properties that you can add to the <strong>donutChartSettings</strong> variable to customize donut / pie charts.</p>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th style="width: 20%">Property</th>
+							<th style="width: 40%">Functionality</th>
+							<th style="width: 20%">Default Value</th>
+							<th style="width: 20%">Remarks</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>paddingLeft</td>
+							<td>The left padding of donut / pie charts (ignoring labels)</td>
+							<td>150</td>
+							<td>Unit: pixels</td>
+						</tr>
+						<tr>
+							<td>paddingRight</td>
+							<td>The right padding of donut / pie charts (ignoring labels)</td>
+							<td>0</td>
+							<td>Unit: pixels</td>
+						</tr>
+						<tr>
+							<td>paddingTop</td>
+							<td>The top padding of donut / pie charts (ignoring labels)</td>
+							<td>0</td>
+							<td>Unit: pixels</td>
+						</tr>
+						<tr>
+							<td>paddingBottom</td>
+							<td>The bottom padding of donut / pie charts (ignoring labels)</td>
+							<td>0</td>
+							<td>Unit: pixels</td>
+						</tr>
+						<tr>
+							<td>labelFontSize</td>
+							<td>The font size of labels in donut / pie charts</td>
+							<td>12</td>
+							<td>Unit: pixels</td>
+						</tr>
+						<tr>
+							<td>labelFontWeight</td>
+							<td>The font weight of labels in donut / pie charts</td>
+							<td>700</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>labelFontColor</td>
+							<td>The font color of labels in donut / pie charts</td>
+							<td>'#666666'</td>
+							<td>The value of this property can be overridden by the <strong>data-label-font-color</strong> attribute specified in the definition of a donut / pie chart.</td>
+						</tr>
+						<tr>
+							<td>labelHeight</td>
+							<td>The height of labels in donut / pie charts</td>
+							<td>12</td>
+							<td>Unit: pixels</td>
+						</tr>
+						<tr>
+							<td>showLabel</td>
+							<td>Specifies whether or not to show labels in donut / pie charts</td>
+							<td>true</td>
+							<td>The value of this property can be overridden by the <strong>data-show-labels</strong> attribute specified in the definition of a donut / pie chart.</td>
+						</tr>
+						<tr>
+							<td>showPercentage</td>
+							<td>Specifies whether or not to show percentages in labels in donut / pie charts</td>
+							<td>false</td>
+							<td>The value of this property can be overridden by the <strong>data-show-percentage</strong> attribute specified in the definition of a donut / pie chart.</td>
+						</tr>
+						<tr>
+							<td>heightToWidthRatio</td>
+							<td>The height-to-width ratio of donut / pie charts</td>
+							<td>1/2</td>
+							<td>Value must be a number.</td>
+						</tr>
+						<tr>
+							<td>maxHeight</td>
+							<td>The maximum height of donut / pie charts</td>
+							<td>200</td>
+							<td>Unit: pixels</td>
+						</tr>
+						<tr>
+							<td>arcInnerRadiusPercent</td>
+							<td>The inner radius in percentage of donut / pie charts</td>
+							<td>50</td>
+							<td>The value of this property can be overridden by the <strong>data-arc-inner-radius-percent</strong> attribute specified in the definition of a donut / pie chart.</td>
+						</tr>
+						<tr>
+							<td>arcOuterRadiusPercent</td>
+							<td>The outer radius in percentage of donut / pie charts</td>
+							<td>100</td>
+							<td>The value of this property can be overridden by the <strong>data-arc-outer-radius-percent</strong> attribute specified in the definition of a donut / pie chart.</td>
+						</tr>
+						<tr>
+							<td>arcStrokeWidth</td>
+							<td>The stroke width of donut / pie charts</td>
+							<td>3</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>arcStrokeColor</td>
+							<td>The stroke color of donut / pie charts</td>
+							<td>'#ffffff'</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>defaultArcFillColor</td>
+							<td>The default fill of arcs in donut / pie charts</td>
+							<td>'#ffe0ba'</td>
+							<td>The value of this property can be overridden by the <strong>data-color</strong> attribute specified in the definition of each item of a donut / pie chart.</td>
+						</tr>
+						<tr>
+							<td>animationDuration</td>
+							<td>The duration of the animation for showing each item in the donut / pie charts in milliseconds</td>
+							<td>200</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>onScrollAnimation</td>
+							<td>Specifies whether or not to enable on-scroll animations for donut / pie charts</td>
+							<td>true</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h4>Progress Charts</h4>
+				<p>Below is a list of properties that you can add to the <strong>progressChartSettings</strong> variable to customize progress charts.</p>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th style="width: 20%">Property</th>
+							<th style="width: 40%">Functionality</th>
+							<th style="width: 20%">Default Value</th>
+							<th style="width: 20%">Remarks</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>labelFontSize</td>
+							<td>The font size of labels in progress charts</td>
+							<td>12</td>
+							<td>Unit: pixels</td>
+						</tr>
+						<tr>
+							<td>labelFontWeight</td>
+							<td>The font weight of labels in progress charts</td>
+							<td>700</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>labelFontColor</td>
+							<td>The font color of labels in progress charts</td>
+							<td>'#666666'</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>labelPaddingLeft</td>
+							<td>The left padding of labels in progress charts</td>
+							<td>0</td>
+							<td>Unit: pixels</td>
+						</tr>
+						<tr>
+							<td>labelPaddingRight</td>
+							<td>The right padding of labels in progress charts</td>
+							<td>10</td>
+							<td>Unit: pixels</td>
+						</tr>
+						<tr>
+							<td>labelWidth</td>
+							<td>The width of labels in progress charts</td>
+							<td>60</td>
+							<td>Unit: pixels</td>
+						</tr>
+						<tr>
+							<td>symbolFontAwesomeClass</td>
+							<td>The FontAwesome icon class for symbols of progress charts</td>
+							<td>'fa-stop'</td>
+							<td>The value of this property can be overridden by the <strong>data-symbol-font-awesome-class</strong> attribute specified in the definition of a progress chart.</td>
+						</tr>
+						<tr>
+							<td>symbolFontSize</td>
+							<td>The font size of symbols of progress charts</td>
+							<td>14</td>
+							<td>Unit: pixels</td>
+						</tr>
+						<tr>
+							<td>symbolPaddingLeft</td>
+							<td>The left padding of each symbol in progress charts</td>
+							<td>2</td>
+							<td>Unit: pixels</td>
+						</tr>
+						<tr>
+							<td>symbolPaddingRight</td>
+							<td>The left padding of each symbol in progress charts</td>
+							<td>2</td>
+							<td>Unit: pixels</td>
+						</tr>
+						<tr>
+							<td>itemHeight</td>
+							<td>The height of each item in progress charts</td>
+							<td>20</td>
+							<td>Unit: pixels</td>
+						</tr>
+						<tr>
+							<td>defaultColor</td>
+							<td>The default color of symbols in progress charts</td>
+							<td>"#000000"</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>animationDuration</td>
+							<td>The duration of the animation for progress charts in milliseconds</td>
+							<td>1200</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>onScrollAnimation</td>
+							<td>Specifies whether or not to enable on-scroll animations for progress charts</td>
+							<td>true</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div>
+				<h3 id="the-folder-structure-of-portfolio">The Folder Structure of Portfolio</h3>
+
+				<p><strong>Since portfolio items and their details are loaded using AJAX, we recommend editing the MongKok template on a PC or Mac with <a href="http://www.wampserver.com/en/" target="_blank">WAMP</a> or <a href="https://www.mamp.info/en/" target="_blank">MAMP</a> installed. If you edit this template on a computer without a local web server, you may not be able to load the portfolio section properly until you upload the template to your web server.</strong></p>
+				<p>Information about portfolio items and their details is saved inside the folder <strong>portfolio</strong>. This folder is organized as follows.</p>
+				<pre>Portfolio
+  [Folder of portfolio category]
+    list.html
+    details-1.html
+    details-2.html
+    ...
+  [Folder of portfolio category]
+    list.html
+    details-1.html
+    details-2.html
+    ...
+  [Folder of portfolio category]
+    list.html
+    details-1.html
+    details-2.html
+    ...</pre>
+				<p>Each portfolio category will have its own folder inside the folder <strong>portfolio</strong>. Inside the folder of each category, there should be a file named <strong>list.html</strong>, which lists all the portfolio items of this category. Note that this file should always be named <strong>list.html</strong>.</p>
+				<p>Besides <strong>list.html</strong>, portfolio details are saved in their own HTML files. Unlike <strong>list.html</strong>, file names of portfolio details are flexible.</p>
+			</div>
+
+			<div>
+				<h3 id="adding-a-portfolio-category">Adding a Portfolio Category</h3>
+
+				<p>To add a portfolio category, open <strong>index.html</strong> and locate the <strong>ul</strong> tag with the class <strong>categories</strong> in the portfolio section. Each category is defined in the following format inside this <strong>ul</strong> tag.</p>
+				<pre>&lt;li&gt;&lt;a href=&quot;#&quot; data-cat=&quot;[Folder name of this category]&quot;&gt;[Category name]&lt;/a&gt;&lt;/li&gt;</pre>
+				<p>Please note that the value of the <strong>data-cat</strong> attribute should be the same as the name of the folder of this category.</p>
+				<p>Next, open the folder <strong>portfolio</strong> and create a folder for this category using the same name specified in the <strong>data-cat</strong> attribute.</p>
+			</div>
+
+			<div>
+				<h3 id="adding-items-to-a-portoflio-category">Adding Items to a Portoflio Category</h3>
+
+				<p>After creating the folder for a new portfolio category, inside that folder, create an HTML file named <strong>list.html</strong>. This file will list all the portfolio items belonging to this category. Below is the format of this file.</p>
+				<pre>&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;ul class=&quot;ajax-portfolio-item-list&quot;&gt;
+    &lt;li&gt;
+      &lt;a data-href=&quot;<span class="important">[Relative / Absolute path to details of this portfolio item]</span>&quot;&gt;
+        &lt;img data-src=&quot;<span class="important">[Relative / Absolute path to thumbnail of this portfolio item]</span>&quot; alt=&quot;...&quot;&gt;
+        &lt;div class=&quot;caption vertically-centered-container&quot;&gt;
+          &lt;div class=&quot;vertically-centered&quot;&gt;
+            &lt;h3&gt;<span class="important">[Title of this portfolio item]</span>&lt;/h3&gt;
+            &lt;div class=&quot;view-btn&quot;&gt;View&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    ...
+  &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+				<p>Each portfolio item is defined inside an <strong>li</strong> tag, which is inside the <strong>ul</strong> tag with the class <strong>ajax-portfolio-item-list</strong>. For each item, you should specify the relative / absolute path to the details page of this portfolio item through the <strong>data-href</strong> attribute of the <strong>a</strong> tag, the relative / absolute path to the thumbnail of this portfolio item through the <strong>data-src</strong> attribute of the <strong>img</strong> tag. Title of the portfolio item should be placed inside the <strong>h3</strong> tag.</p>
+				<h4>Using Relative Paths</h4>
+				<p>Since portfolio details are loaded using AJAX, if you would like to use relative paths in links, images and iframes, please use the attributes <strong>data-href</strong> and <strong>data-src</strong> instead of <strong>href</strong> and <strong>src</strong>.</p>
+				<h4>Sample Lists</h4>
+				<p>Please also see the <strong>list.html</strong> in the sample data to help you add your own portfolio items.</p>
+			</div>
+
+			<div>
+				<h3 id="adding-details-of-a-portfolio-item">Adding Details of a Portfolio Item</h3>
+
+				<p>The MongKok template comes with 3 types of predefined layouts for portfolio details. The 3 types feature <strong>an image slider</strong>, <strong>an embedded YouTube video</strong>, and <strong>an embedded Vimeo video</strong> respectively. You can find these layouts in the sample data. You can also use your own layouts.</p>
+				<p>To keep the portfolio folder organized, it is recommended to create the details page of a portfolio item inside its own category folder. However, it is not mandatory to do so. Since a portfolio item can belong to more than one categories at the same time. In that case, the details page can be saved inside the folder of only one category, and the <strong>list.html</strong> of other categories can refer to that details page.</p>
+				<h4>A Minimal Details Page</h4>
+				<p>A minimal details page of a portfolio item should be defined in the following format.</p>
+				<pre>&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h3&gt;<span class="important">[Title of this portfolio item]</span>&lt;/h3&gt;
+
+  &lt;div class=&quot;row desc&quot;&gt;
+    <span class="important">[Detailed descriptions of this portfolio item]</span>
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+				<p>Title of this portfolio item should be placed inside the <strong>h3</strong> tag, and you are free to add your own content inside the <strong>div</strong> tag with the classes <strong>row</strong> and <strong>desc</strong>.</p>
+				<p>The 3 types of predefined layouts are based on the minimal format above. Each of the 3 types has 3 variants: <strong>no sidebar</strong>, <strong>sidebar on the left</strong> and s<strong>idebar on the right</strong>.</p>
+				<h4>A Details Page Featuring an Image Slider</h4>
+				<p>The predefined layout featuring an image slider with sidebar on the left is defined in the following format.</p>
+				<pre>&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Details of Portfolio Item&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h3&gt;<span class="important">[Title of this portfolio item]</span>&lt;/h3&gt;
+  
+  &lt;ul class=&quot;images-for-slider&quot;&gt;
+    &lt;li&gt;
+      &lt;img data-src=&quot;<span class="important">[Relative / Absolute path to a slider image]</span>&quot; alt=&quot;...&quot;&gt;
+      &lt;div class=&quot;carousel-caption&quot;&gt;
+        &lt;p&gt;<span class="important">[Caption of this slider image]</span>&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;img data-src=&quot;<span class="important">[Relative / Absolute path to a slider image]</span>&quot; alt=&quot;...&quot;&gt;
+      &lt;div class=&quot;carousel-caption&quot;&gt;
+        &lt;p&gt;<span class="important">[Caption of this slider image]</span>&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    ...
+  &lt;/ul&gt;
+
+  &lt;div class=&quot;row desc&quot;&gt;
+    &lt;div class=&quot;col-sm-4 left-info-col&quot;&gt;
+      &lt;dl&gt;
+        &lt;dt&gt;<span class="important">[Label of sidebar info]</span>&lt;/dt&gt;
+        &lt;dd&gt;<span class="important">[Value of sidebar info]</span>&lt;/dd&gt;
+        &lt;dt&gt;<span class="important">[Label of sidebar info]</span>&lt;/dt&gt;
+        &lt;dd&gt;<span class="important">[Value of sidebar info]</span>&lt;/dd&gt;
+        ...
+      &lt;/dl&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-8 content-col&quot;&gt;
+      <span class="important">[Detailed descriptions of this portfolio item]</span>
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+				<h4>A Details Page Featuring an Embedded YouTube / Vimeo Video</h4>
+				<p>The predefined layout featuring an embedded YouTube / Vimeo video with sidebar on the left is defined in the following format.</p>
+				<pre>&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Details of Portfolio Item&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h3&gt;<span class="important">[Title of this portfolio item]</span>&lt;/h3&gt;
+  
+  &lt;iframe class=&quot;video-iframe&quot; data-src=&quot;<span class="important">[YouTube / Vimeo URL for embedding]</span>&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
+
+  &lt;div class=&quot;row desc&quot;&gt;
+    &lt;div class=&quot;col-sm-4 left-info-col&quot;&gt;
+      &lt;dl&gt;
+        &lt;dt&gt;<span class="important">[Label of sidebar info]</span>&lt;/dt&gt;
+        &lt;dd&gt;<span class="important">[Value of sidebar info]</span>&lt;/dd&gt;
+        &lt;dt&gt;<span class="important">[Label of sidebar info]</span>&lt;/dt&gt;
+        &lt;dd&gt;<span class="important">[Value of sidebar info]</span>&lt;/dd&gt;
+        ...
+      &lt;/dl&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-8 content-col&quot;&gt;
+      <span class="important">[Detailed descriptions of this portfolio item]</span>
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+				The following two screenshots illustrate where to find the URL for embedding in a YouTube / Vimeo video.
+				<p class="text-center">
+					<img src="images/youtube.jpg" alt="">
+					<img src="images/vimeo.jpg" alt="">
+				</p>
+				<h4>Using Relative Paths</h4>
+				<p>Since portfolio details are loaded using AJAX, if you would like to use relative paths in links, images and iframes, please use the attributes <strong>data-href</strong> and <strong>data-src</strong> instead of <strong>href</strong> and <strong>src</strong>.</p>
+				<h4>Sample Layouts</h4>
+				<p>Please refer to the sample data for the formats of other variants of the 3 types of layouts.</p>
+			</div>
+
+			<div>
+				<h3 id="setting-up-the-portfolio-section-through-index-js">Setting Up the Portfolio Section through index.js</h3>
+
+				<p>You can set up the portfolio section by adding property-value pairs in the following format to the <strong>portfolioSettings</strong> variable in <strong>js/index.js</strong>.</p>
+				<pre><span class="important">[Property]</span>: <span class="important">[Value]</span>,</pre>
+				<p>Below is a list of properties that you can use to customize the portfolio section.</p>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th style="width: 20%">Property</th>
+							<th style="width: 40%">Functionality</th>
+							<th style="width: 20%">Default Value</th>
+							<th style="width: 20%">Remarks</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>heightToWidthRatio</td>
+							<td>The height to width ratio of portfolio thumbnails</td>
+							<td>3/4</td>
+							<td>Value must be a number.</td>
+						</tr>
+						<tr>
+							<td>minThumbnailWidth</td>
+							<td>The minimum width of portfolio thumbnails</td>
+							<td>220</td>
+							<td>Unit: pixels</td>
+						</tr>
+						<tr>
+							<td>itemDetailsDropCap</td>
+							<td>Specifies whether or not to automatically add the drop-cap class to the first paragraph of portfolio details</td>
+							<td>true</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>animationDuration</td>
+							<td>The duration of animations in the portfolio section in milliseconds</td>
+							<td>300</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>autoScroll</td>
+							<td>Specifies whether or not to automatically scroll to the top of portfolio details when a portfolio item is selected.</td>
+							<td>true</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div>
+				<h3 id="setting-up-the-portfolio-section-through-index-less">Setting Up the Portfolio Section through index.less</h3>
+
+				<p>There are a few variables in <strong>css/index.less</strong> whose values you can change to modify the appearance of the portfolio section. Please see the table below for your reference.</p>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th style="width: 20%">Property</th>
+							<th style="width: 40%">Functionality</th>
+							<th style="width: 20%">Default Value</th>
+							<th style="width: 20%">Remarks</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>@portfolioItemListCaptionPanelBgColor</td>
+							<td>The background color of the caption overlay in the portfolio section</td>
+							<td>fadeout(black, 30%)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@portfolioItemListTitleTextColor</td>
+							<td>The color of title text in the caption overlay in the portfolio section</td>
+							<td>#fff</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@portfolioItemListViewButtonBgColor</td>
+							<td>The background color of the view button in the caption overlay in the portfolio section</td>
+							<td>darken(@primaryColor, 10%)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@portfolioItemListViewButtonTextColor</td>
+							<td>The color of text of the view button in the caption overlay in the portfolio section</td>
+							<td>#fff</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div>
+				<h3 id="editing-the-event-section">Editing the Event Section</h3>
+
+				<p>The Mongkok template features an event section which allows you to display the events you will be attending.</p>
+				<p>Modifying the event section is straightforward. If you would like to add / remove a row / column, simply follow the HTML table format at <a href="http://www.w3schools.com/html/html_tables.asp" target="_blank">this webpage</a> or refer to the code snippets page for more examples of HTML tables.</p>
+			</div>
+
+			<div>
+				<h3 id="adding-an-animated-book">Adding an Animated Book</h3>
+
+				<p>If you are an author, then it is likely that the book section will be useful to you. It generates 3D CSS3 animated books from book cover images with 2D fallback.</p>
+				<p>A CSS3 animated book in the MongKok template is defined in the following format.</p>
+				<pre>&lt;figure class=&quot;css-book&quot; data-back-face-bg-color=&quot;<span class="important">[Background color of the back face]</span>&quot; data-left-face-bg-color=&quot;<span class="important">[Background color of the left face]</span>&quot; data-front-face-bg-color=&quot;<span class="important">[Background color of the front face]</span>&quot;&gt;
+  &lt;img src=&quot;<span class="important">[Path to book cover image]</span>&quot; alt=&quot;&quot;&gt;
+  &lt;figcaption class=&quot;vertically-centered-container&quot;&gt;
+    &lt;div class=&quot;vertically-centered&quot;&gt;
+      &lt;h4&gt;<span class="important">[Book title]</span>&lt;/h4&gt;
+      &lt;p&gt;&lt;a href=&quot;<span class="important">[Link to book preview]</span>&quot;&gt;&lt;i class=&quot;fa fa-search fa-lg&quot;&gt;&lt;/i&gt; Preview&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;a href=&quot;<span class="important">[Link to book purchasing webpage]</span>&quot;&gt;&lt;i class=&quot;fa fa-shopping-cart fa-lg&quot;&gt;&lt;/i&gt; Buy from Amazon.com&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;</pre>
+				<p>The HTML code above is self-explanatory. Depending on the book cover image, you may want to use different background colors for the front / left / back face for different books.</p>
+				<h4>Sample Animated Books</h4>
+				<p>Please refer to the animated books in the sample data and the code snippets page for the HTML code format.</p>
+			</div>
+
+			<div>
+				<h3 id="changing-css3-transitions-of-animated-books">Changing CSS3 Transitions of Animated Books</h3>
+
+				<h4>Using the Predefined Book Transitions</h4>
+				<p>There are 2 predefined 3D transitions for animated books. To change the transition, open <strong>js/index.js</strong> and locate the property <strong>bookTransformPreset</strong> within the variable <strong>cssBookSettings</strong>. Then set its value to <strong>1</strong> or <strong>2</strong>. If you cannot find this property, add this property to <strong>cssBookSettings</strong> using the following format.</p>
+				<pre>bookTransformPreset: <span class="important">[Value of this property]</span>,</pre>
+
+				<h4>Customizing Book Transitions</h4>
+				<p>If you are familar with CSS3 transform, you can even try creating your own book transitions. Simply set the value of the <strong>bookTransformPreset</strong> property to <strong>0</strong> and then add the following properties to the <strong>cssBookSettings</strong> object.</p>
+				<pre>bookInitialTransform: '<span class="important">[Value of CSS3 transform]</span>',
+bookHoverTransform: '<span class="important">[Value of CSS3 transform]</span>',
+frontFaceInitialTransform: '<span class="important">[Value of CSS3 transform]</span>',
+frontFaceHoverTransform: '<span class="important">[Value of CSS3 transform]</span>',</pre>
+				<p>You may want to refer to <a href="#setting-up-animated-books-through-index-js">Setting Up Animated Books through index.js</a> for more detailed explanations of these 4 properties.</p>
+				<p class="important">If you are not familiar with CSS3 transform, it is highly recommended that you use one of the predefined book transitions. Since the stability of new book transitions is not guaranteed. </p>
+			</div>
+
+			<div>
+				<h3 id="setting-up-animated-books-through-index-js">Setting Up Animated Books through index.js</h3>
+
+				<p>You can set up animated books by adding property-value pairs in the following format to the <strong>cssBookSettings</strong> variable in <strong>js/index.js</strong>.</p>
+				<pre><span class="important">[Property]</span>: <span class="important">[Value]</span>,</pre>
+				<p>Below is a list of properties that you can use to customize animated books.</p>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th style="width: 20%">Property</th>
+							<th style="width: 40%">Functionality</th>
+							<th style="width: 20%">Default Value</th>
+							<th style="width: 20%">Remarks</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>disable3dStyle</td>
+							<td>Disable 3D animated books and use the 2D fallback</td>
+							<td>false</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>bookTransformPreset</td>
+							<td>Specifies which predefined book transition to use</td>
+							<td>1</td>
+							<td>Valid values are <strong>0</strong>, <strong>1</strong>, <strong>2</strong>. <strong>1</strong> and <strong>2</strong> refer to the two predefined transitions respectively, while <strong>0</strong> indicates not to use the two predefined transitions.</td>
+						</tr>
+						<tr>
+							<td>pageOffset</td>
+							<td>The distance between the borders of the inner page and the cover in 3D animated books.</td>
+							<td>6</td>
+							<td>Unit: pixels</td>
+						</tr>
+						<tr>
+							<td>thickness</td>
+							<td>The thickness of 3D animated books</td>
+							<td>30</td>
+							<td>Unit: pixels</td>
+						</tr>
+						<tr>
+							<td>bookInitialTransform</td>
+							<td>The initial CSS transform for animated books</td>
+							<td>'translateZ(-100px) rotateY(-30deg)'</td>
+							<td>This property is only effective when <strong>bookTransformPreset</strong> is not <strong>1</strong> or <strong>2</strong>.</td>
+						</tr>
+						<tr>
+							<td>bookHoverTransform</td>
+							<td>The CSS transform when hovering animated books</td>
+							<td>'translateZ(0) rotateY(0deg) rotateX(0deg)'</td>
+							<td>This property is only effective when <strong>bookTransformPreset</strong> is not <strong>1</strong> or <strong>2</strong>.</td>
+						</tr>
+						<tr>
+							<td>frontFaceInitialTransform</td>
+							<td>The initial CSS transform for the book cover (front face)</td>
+							<td>'rotateY(0deg)'</td>
+							<td>This property is only effective when <strong>bookTransformPreset</strong> is not <strong>1</strong> or <strong>2</strong>.</td>
+						</tr>
+						<tr>
+							<td>frontFaceHoverTransform</td>
+							<td>The CSS transform for the book cover (front face) when hovering animated books</td>
+							<td>'rotateY(-180deg)'</td>
+							<td>This property is only effective when <strong>bookTransformPreset</strong> is not <strong>1</strong> or <strong>2</strong>.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div>
+				<h3 id="setting-up-animated-books-through-index-less">Setting Up Animated Books through index.less</h3>
+
+				<p>There are also a number of variables in <strong>css/index.less</strong> whose values you can change to modify the appearance of animated books. Please see the table below for your reference.</p>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th style="width: 20%">Property</th>
+							<th style="width: 40%">Functionality</th>
+							<th style="width: 20%">Default Value</th>
+							<th style="width: 20%">Remarks</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>@cssBookFlatCaptionBgColor</td>
+							<td>The background color of caption overlay in the 2D fallback of animated books</td>
+							<td>fadeout(black, 30%)</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@cssBookFlatCaptionTitleColor</td>
+							<td>The color of titles in caption overlay in the 2D fallback of animated books</td>
+							<td>#fff</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@cssBookFlatCaptionHoverPadding</td>
+							<td>The padding of caption overlay in the 2D fallback of animated books</td>
+							<td>10px</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div>
+				<h3 id="adding-items-to-the-gallery-section">Adding Items to the Gallery Section</h3>
+
+				<p>The gallery section allows you to show your images, YouTube / Vimeo videos and webpages in a lightbox. The lightbox feature is provided by the Colorbox plug-in.</p>
+				<p>Gallery items are defined in the <strong>ul</strong> tag with the <strong>gallery</strong> class.</p>
+				<h4>Image Lightbox</h4>
+				<p>An image lightbox is defined in the follow format in the gallery section.</p>
+				<pre>&lt;li&gt;
+  &lt;a href=&quot;<span class="important">[Path to large image]</span>&quot; class=&quot;lightbox lightbox-image&quot; title=&quot;<span class="important">[Caption shown in lightbox]</span>&quot;&gt;
+    &lt;img src=&quot;<span class="important">[Path to image thumbnail]</span>&quot; alt=&quot;<span class="important">[alternate text for image thumbnail]</span>&quot;&gt;
+  &lt;/a&gt;
+&lt;/li&gt;</pre>
+				<h4>Video Lightbox</h4>
+				<p>A video lightbox is defined in the follow format in the gallery section.</p>
+				<pre>&lt;li&gt;
+  &lt;a href=&quot;<span class="important">[YouTube / Vimeo URL for embedding]</span>&quot; class=&quot;lightbox lightbox-video&quot; title=&quot;<span class="important">[Caption shown in lightbox]</span>&quot;&gt;
+    &lt;img src=&quot;<span class="important">[Path to video thumbnail]</span>&quot; alt=&quot;<span class="important">[alternate text for video thumbnail]</span>&quot;&gt;
+  &lt;/a&gt;
+&lt;/li&gt;</pre>
+				<h4>Webpage Lightbox</h4>
+				<p>A webpage lightbox is defined in the follow format in the gallery section.</p>
+				<pre>&lt;li&gt;
+  &lt;a href=&quot;<span class="important">[URL of webpage]</span>&quot; class=&quot;lightbox lightbox-webpage&quot; title=&quot;<span class="important">[Caption shown in lightbox]</span>&quot;&gt;
+    &lt;img src=&quot;<span class="important">[Path to webpage thumbnail]</span>&quot; alt=&quot;<span class="important">[alternate text for webpage thumbnail]</span>&quot;&gt;
+  &lt;/a&gt;
+&lt;/li&gt;</pre>
+				<h4>Lightboxes outside the Gallery Section</h4>
+				<p>You may also use the lightbox feature outside the gallery section. Please refer to the code snippets page for the HTML code format.</p>
+			</div>
+
+			<div>
+				<h3 id="setting-up-the-gallery-section-through-index-less">Setting Up the Gallery Section through index.less</h3>
+
+				<p>There are a few variables in <strong>css/index.less</strong> whose values you can change to modify the appearance of the gallery section. Please see the table below for your reference.</p>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th style="width: 20%">Property</th>
+							<th style="width: 40%">Functionality</th>
+							<th style="width: 20%">Default Value</th>
+							<th style="width: 20%">Remarks</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>@galleryLightBoxHoverPanelBgColor</td>
+							<td>The background color of the hover overlay in the gallery section</td>
+							<td>@primaryColor</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@galleryLightBoxHoverIconColor</td>
+							<td>The color of icon in the hover overlay in the gallery section</td>
+							<td>@bgColor</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@galleryItemsPerRow</td>
+							<td>The number of gallery items per row</td>
+							<td>4</td>
+							<td>The value here may not be effective when the theme is viewed on mobile devices due the width of the display.</td>
+						</tr>
+						<tr>
+							<td>@galleryItemPadding</td>
+							<td>The padding of gallery items</td>
+							<td>10px</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@galleryDisplayOverlay</td>
+							<td>Specifies whether or not to show the hover overlay</td>
+							<td>block</td>
+							<td>Use <strong>block</strong> or <strong>none</strong> as value.</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div>
+				<h3 id="setting-up-lightboxes-through-index-js">Setting Up Lightboxes through index.js</h3>
+
+				<p>You can set up lightboxes by adding property-value pairs in the following format to the <strong>lightboxImageSettings</strong> variable, the <strong>lightboxVideoSettings</strong> variable and the <strong>lightboxWebpageSettings</strong> variable in <strong>js/index.js</strong>.</p>
+				<pre><span class="important">[Property]</span>: <span class="important">[Value]</span>,</pre>
+				<p>For a list of properties that you can use to customize lightboxes, please visit the settings section of the <a href="http://www.jacklmoore.com/colorbox/" target="_blank">Colorbox website</a>.</p>
+			</div>
+
+			<div>
+				<h3 id="setting-up-google-maps">Setting up Google Maps</h3>
+
+				<p>To set up Google Maps, locate the variable <strong>googleMapsSettings</strong> in <strong>js/index.js</strong>.</p>
+				</p>Change the values of <strong>latitude</strong> and <strong>longitude</strong> to the latitude and longitude of your location. Change the value of <strong>zoom</strong> to control the zoom level of the map.</p>
+				<p>You can further set up Google Maps by adding property-value pairs in the following format to <strong>googleMapsSettings</strong>.</p>
+				<pre><span class="important">[Property]</span>: <span class="important">[Value]</span>,</pre>
+				<p>All the properties available for customizing Google Maps in this template are listed in the following table.</p>
+
+				<table>
+					<tr>
+						<th>Property</th>
+						<th>Functionality</th>
+						<th>Default Value</th>
+						<th>Remarks</th>
+					</tr>
+					<tr>
+						<td>styled</td>
+						<td>Specifies whether to use the styled Google Maps or the original version</td>
+						<td>true</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>latitude</td>
+						<td>Specifies the latitude of the location</td>
+						<td>22.282068</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>longitude</td>
+						<td>Specifies the longitude of the location</td>
+						<td>114.158893</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>zoom</td>
+						<td>Specifies the zoom level of the map</td>
+						<td>15</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>hue</td>
+						<td>Specifies the hue for styling the map (Value should be in RGB format)</td>
+						<td>primaryColor.toRgbaString()</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>gamma</td>
+						<td>Specifies the gamma value for styling the map</td>
+						<td>1.75</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>saturation</td>
+						<td>Specifies the saturation value for styling the map</td>
+						<td>80</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>lightness</td>
+						<td>Specifies the lightness for styling the map</td>
+						<td>-10</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>invertLightness</td>
+						<td>Specifies whether to render a light version or a dark version of the map</td>
+						<td>false</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>infoWindowContentString</td>
+						<td>Specifies the content string of the info window when the map marker is clicked</td>
+						<td>'&lt;h4&gt;Info Window&lt;/h4&gt;' + '&lt;p&gt;You can add content here&lt;/p&gt;'</td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+
+			<div>
+				<h3 id="setting-up-the-contact-form">Setting up the Contact Form</h3>
+
+				<p>The contact form is powered by the <a href="http://codecanyon.net/item/ajax-contact-form/50846?WT.ac=category_item&WT.seg_1=category_item&WT.z_author=jigowatt" target="_blank">ajax contact form</a> written by jigowatt. The related PHP file is <strong>php/contact.php</strong> and the related JavaScript file is <strong>js/contact.js</strong>.</p>
+				<p>Before you can properly receive messages, open <strong>php/contact.php</strong> and locate the following line.</p>
+				<pre>$address = "example@example.com";</pre>
+				<p>Replace the email address <strong>example@example.com</strong> with your own email address.</p>
+				<p>To add / remove a field, please visit <a href="http://jigowatt.co.uk/blog/add-custom-fields-to-the-ajax-contact-form/" target="_blank">http://jigowatt.co.uk/blog/add-custom-fields-to-the-ajax-contact-form/</a>.</p>
+			</div>
+
+			<div>
+				<h3 id="setting-up-the-footer">Setting up the Footer</h3>
+
+				<p>To edit the footer, locate the <strong>footer</strong> tag in <strong>index.html</strong>.</p>
+				<p>You can link to your PDF resume through the <strong>Download Resume</strong> button, add your own signature and modify the copyright information in the footer section.</p>
+			</div>
+
+			<div>
+				<h3 id="setting-up-the-footer-through-index-less">Setting up the Footer through index.less</h3>
+
+				<p>There are two variables in <strong>css/index.less</strong> whose values you can change to modify the appearance of the footer. Please see the table below for your reference.</p>
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th style="width: 20%">Property</th>
+							<th style="width: 40%">Functionality</th>
+							<th style="width: 20%">Default Value</th>
+							<th style="width: 20%">Remarks</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>@footerBgColor</td>
+							<td>The background color of the footer</td>
+							<td>@bgColor</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>@footerTextColor</td>
+							<td>The color of body text in the footer</td>
+							<td>@bodyTextColor</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div>
+				<h3 id="setting-up-google-analytics">Setting up Google Analytics</h3>
+
+				<p>To set up Google Analytics, scroll to the bottom of <strong>index.html</strong>. You will then find a <strong>script</strong> tag that allows you to paste the Google Analytics code.</p>
+			</div>
+
+			<div>
+				<h3 id="disabling-momentum-scrolling">Disabling Momentum Scrolling</h3>
+
+				<p>Due to the off-canvas navigation design of the MongKok template, the welcome section cannot be fixed on iOS if momentum scrolling is activated.</p>
+				<p>If you would like to disable momentum scrolling on iOS, open <strong>js/index.js</strong> and locate the variable <strong>scrollingSettings</strong>. Then Change the value of the property <strong>momentumScrolling</strong> to <strong>false</strong>.</p>
+			</div>
+
+			<div>
+				<h3 id="search-engine-optimization-seo">Search Engine Optimization (SEO)</h3>
+
+				<p>To define keywords for search engines, open <strong>index.html</strong> and locate the following line.</p>
+				<pre>&lt;meta name=&quot;keywords&quot; content=&quot;Keyword1, Keyword2, Keyword3&quot;&gt;</pre>
+				<p>Then add your keywords to the <strong>content</strong> attribute.</p>
+				<p>Similarly, to define a description, open <strong>index.html</strong> and locate the following line.</p>
+				<pre>&lt;meta name=&quot;description&quot; content=&quot;A modern onepage resume / personal template&quot;&gt;</pre>
+				<p>Then add your descriptions of this webpage to the <strong>content</strong> attribute.</p>
+			</div>
+
+			<div>
+				<h3 id="browser-compatibility">Browser Compatibility</h3>
+
+				<p>This template supports Chrome, Firefox, Safari and IE9+.</p>
+				<p>Note that some features of this template may be disabled on certain devices.</p>
+				<ul>
+					<li>Off-Canvas navigation animations require the support of CSS3 transitions and animations, and therefore are not available in IE9, where a jQuery fallback is provided.</li>
+					<li>3D CSS3 animated books require the support of the CSS3 property <strong>transform-style</strong>, and therefore are not available in IE9, IE10 and IE11, where a 2D fallback is provided.</li>
+				</ul>
+			</div>
+
+			<div>
+				<h3 id="theme-support">Theme Support</h3>
+
+				<p>If you have any question or problem when setting up or using the theme, or if you have found any bug of the theme, you are welcome to leave a message at <a href="http://www.simon-li.com" target="_blank">www.simon-li.com</a> or send an email to <a href="mailto:info@simon-li.com">info@simon-li.com</a> on weekdays (GMT+8). I will get back to you as soon as possible. Thank you for your support and understanding.</p>
+			</div>
+
+			<div>
+				<h3 id="credits">Credits</h3>
+				<ul>
+					<li><a href="http://getbootstrap.com" target="_blank">Bootstrap 3 (MIT License)</a></li>
+					<li><a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome (SIL OFL 1.1, MIT License)</a></li>
+					<li><a href="http://jquery.com/" target="_blank">jQuery (MIT License)</a></li>
+					<li><a href="http://www.jacklmoore.com/colorbox/" target="_blank">Colorbox (MIT License)</a></li>
+					<li><a href="http://requirejs.org/" target="_blank">RequireJS (MIT License)</a></li>
+					<li><a href="http://codecanyon.net/item/ajax-contact-form/50846?WT.ac=category_item&amp;WT.seg_1=category_item&amp;WT.z_author=jigowatt" target="_blank">AJAX Contact Form (Extended License)</a></li>
+					<li><a href="http://d3js.org/" target="_blank">D3.js (BSD License)</a></li>
+					<li><a href="https://github.com/brandonaaron/jquery-mousewheel" target="_blank">jQuery Mouse Wheel Plugin (MIT License)</a></li>
+					<li><a href="http://modernizr.com/" target="_blank">Modernizr (MIT License)</a></li>
+					<li><a href="https://gicthub.com/ericf/urljs" target="_blank">URL.js (MIT License)</a></li>
+					<li><a href="https://github.com/jquery/jquery-color" target="_blank">jQuery Color (MIT License)</a></li>
+					<li><a href="https://github.com/brandonaaron/jquery-getscrollbarwidth" target="_blank">Get Scrollbar Width (MIT and GPL License)</a></li>
+					<li><a href="https://github.com/EightMedia/hammer.js" target="_blank">Hammer.js (MIT License)</a></li>
+					<li><a href="http://tympanus.net/codrops/2013/08/28/transitions-for-off-canvas-navigations/" target="_blank">Off-Canvas transitions inspired by Codrops</a></li>
+				</ul>
+			</div>
+
+			<footer>
+			<p><strong>Thank you for reading this manual.</strong></p>
+			<p>Created by Simon Li<br>Apr. 2014</p>
+			</footer>
+		</div>	
+	</div>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
